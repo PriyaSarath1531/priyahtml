@@ -1,0 +1,54 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f9fa;
+}
+
+.hero {
+  min-height: 60vh;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.social-links a {
+  color: #fff;
+  transition: color 0.3s;
+}
+.social-links a:hover {
+  color: #ffd700;
+}
+
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.text-purple {
+  color: #6f42c1;
+}
+
+footer {
+  background: #222;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .card-img-top {
+    height: 180px;
+    object-fit: cover;
+  }
+}
